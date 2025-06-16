@@ -14,10 +14,9 @@ import { ref, onMounted } from 'vue'
 import axios from 'axios'
 
 const menu = ref([])
-
 onMounted(async () => {
-  // 這裡用一個假 API，之後可換成你自己的 API
-  const res = await axios.get('https://mocki.io/v1/0a7e2e2e-2e2e-4e2e-8e2e-2e2e2e2e2e2e')
+  const res = await axios.get('https://684faa72e7c42cfd179568a8.mockapi.io/menu')
   menu.value = res.data
 })
+
 </script>
