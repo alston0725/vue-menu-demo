@@ -14,9 +14,9 @@ import { ref, onMounted } from 'vue'
 import axios from 'axios'
 
 const menu = ref([])
+
 onMounted(async () => {
   const res = await axios.get('https://684faa72e7c42cfd179568a8.mockapi.io/menu')
   menu.value = res.data
 })
-
 </script>

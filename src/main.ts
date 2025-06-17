@@ -1,10 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-
-// 新增這兩行
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import router from './router'
 
 const app = createApp(App)
-app.use(ElementPlus) // 新增這行
+app.use(ElementPlus)
+app.use(router)
 app.mount('#app')

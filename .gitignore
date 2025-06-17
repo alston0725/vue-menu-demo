@@ -24,3 +24,15 @@ dist-ssr
 *.sw?
 .env
 .env.*
+
+# 建議補充
+Thumbs.db
+# 忽略 JetBrains IDE 設定
+.idea/
+# 忽略 VSCode 工作區設定（已包含）
+# 忽略 Vite 產生的 cache
+.vitepress/cache
+# 忽略 Mac 系統檔
+.DS_Store
+# 忽略 Windows 系統檔
+Thumbs.db
