@@ -53,20 +53,18 @@
   </nav>
 
   <!-- 新增：右下角Line按鈕 -->
-  <template v-if="true">
-    <a
-      href="https://line.me/ti/p/0snVxtdKin" 
-      class="line-float-btn" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      aria-label="加入Line"
-    >
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="18" cy="18" r="18" fill="#06C755"/>
-        <path d="M18 8C12.2 8 7.5 11.87 7.5 16.44c0 2.6 1.8 4.9 4.6 6.36-.2.7-.7 2.3-.8 2.7 0 0-.01.09.04.13.05.04.12.01.12.01.16-.02 2.3-1.5 3.2-2.1.8.12 1.6.18 2.4.18 5.8 0 10.5-3.87 10.5-8.44S23.8 8 18 8zM14.1 17.7h-1.1c-.13 0-.24-.1-.24-.23v-3.1c0-.13.11-.23.24-.23h1.1c.13 0 .24.1.24.23v3.1c0 .13-.11.23-.24.23zm2.7 0h-1.1c-.13 0-.24-.1-.24-.23v-3.1c0-.13.11-.23.24-.23h1.1c.13 0 .24.1.24.23v3.1c0 .13-.11.23-.24.23zm2.7 0h-1.1c-.13 0-.24-.1-.24-.23v-3.1c0-.13.11-.23.24-.23h1.1c.13 0 .24.1.24.23v3.1c0 .13-.11.23-.24.23z" fill="#fff"/>
-      </svg>
-    </a>
-  </template>
+<template v-if="true">
+  <a
+    href="https://line.me/ti/p/0snVxtdKin"
+    class="line-float-btn"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="加入Line"
+  >
+    <!-- 使用官方LINE圖標圖片，請將圖片放在 public/line-logo.png 或 assets 目錄下 -->
+    <img src="/line-logo.png" alt="LINE logo" style="width: 100%; height: 100%; display: block;" />
+  </a>
+</template>
 </template>
 
 <script setup>
@@ -234,7 +232,6 @@ const closeMobileMenu = () => {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: #06C755;
   display: flex;
   align-items: center;
   justify-content: center;
