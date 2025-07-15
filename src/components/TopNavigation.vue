@@ -52,7 +52,7 @@
     </div>
   </nav>
 
-  <!-- 新增：右下角Line按鈕 -->
+  <!-- 新增：Line按鈕 -->
 <template v-if="true">
   <a
     href="https://line.me/ti/p/0snVxtdKin"
@@ -61,7 +61,7 @@
     rel="noopener noreferrer"
     aria-label="加入Line"
   >
-    <!-- 使用官方LINE圖標圖片，請將圖片放在 public/line-logo.png 或 assets 目錄下 -->
+    <!-- 使用官方LINE圖標圖片-->
     <img src="/line-logo.png" alt="LINE logo" style="width: 100%; height: 100%; display: block;" />
   </a>
 </template>
